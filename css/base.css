@@ -1,0 +1,842 @@
+/* ==========================================================================
+   First Tech - Challenger 
+   ========================================================================== */
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'interstateregular';
+  src: url("fonts/interstate-regular-webfont.eot");
+  src: url("fonts/interstate-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/interstate-regular-webfont.woff") format("woff"), url("fonts/interstate-regular-webfont.ttf") format("truetype"), url("fonts/interstate-regular-webfont.svg#interstateregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 2, ../sass/partials/_library.scss */
+.interstate-regular {
+  font-family: 'interstateregular';
+}
+
+@font-face {
+  font-family: 'interstatebold';
+  src: url("fonts/interstate-bold-webfont.eot");
+  src: url("fonts/interstate-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/interstate-bold-webfont.woff") format("woff"), url("fonts/interstate-bold-webfont.ttf") format("truetype"), url("fonts/interstate-bold-webfont.svg#interstatebold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 3, ../sass/partials/_library.scss */
+.interstate-bold {
+  font-family: 'interstatebold';
+}
+
+/* line 16, ../sass/partials/_library.scss */
+.clear {
+  display: block;
+  clear: both;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 31, ../sass/partials/_library.scss */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 36, ../sass/partials/_library.scss */
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 44, ../sass/partials/_library.scss */
+.cf {
+  *zoom: 1;
+}
+
+/* line 21, ../sass/base.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #333333;
+}
+
+/* line 25, ../sass/base.scss */
+body {
+  font-family: "interstateregular";
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* line 31, ../sass/base.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 36, ../sass/base.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 41, ../sass/base.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 50, ../sass/base.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 54, ../sass/base.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 60, ../sass/base.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 65, ../sass/base.scss */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1045px;
+}
+
+/* ===================
+    Header
+   =================== */
+/* line 74, ../sass/base.scss */
+.header-container {
+  width: 100%;
+  background: #fff;
+  min-height: 85px;
+  -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.25);
+}
+/* line 82, ../sass/base.scss */
+.header-container a#logo {
+  display: block;
+  width: 158px;
+  height: 48px;
+  text-indent: -10000px;
+  font-size: 0;
+  background: transparent url("../img/logo.png") no-repeat;
+  float: left;
+  margin: 20px 0 0 0;
+}
+/* line 88, ../sass/base.scss */
+.header-container .search {
+  display: block;
+  width: 204px;
+  height: 35px;
+  text-indent: -10000px;
+  font-size: 0;
+  background: transparent url("../img/search.png") no-repeat;
+  float: right;
+  margin: 41px 5px 0 0;
+}
+/* line 93, ../sass/base.scss */
+.header-container .login {
+  display: block;
+  width: 126px;
+  height: 35px;
+  text-indent: -10000px;
+  font-size: 0;
+  background: transparent url("../img/btn_login.png") no-repeat;
+  float: right;
+  margin-top: 41px;
+}
+/* line 98, ../sass/base.scss */
+.header-container nav {
+  display: block;
+  width: 313px;
+  height: 12px;
+  text-indent: -10000px;
+  font-size: 0;
+  background: transparent url("../img/navigation.png") no-repeat;
+  float: right;
+  margin: 58px 16px 0 0;
+}
+@media screen and (max-width: 639px) {
+  /* line 106, ../sass/base.scss */
+  .header-container .search {
+    float: left;
+    margin-top: 20px;
+  }
+  /* line 110, ../sass/base.scss */
+  .header-container .login {
+    float: left;
+    clear: both;
+    margin: 20px 16px 0 0;
+  }
+  /* line 116, ../sass/base.scss */
+  .header-container nav {
+    clear: both;
+    float: left;
+    margin: 20px 0;
+  }
+}
+@media screen and (max-width: 950px) {
+  /* line 124, ../sass/base.scss */
+  .header-container nav {
+    float: left;
+    clear: both;
+    margin: 20px 0;
+  }
+  /* line 130, ../sass/base.scss */
+  .header-container .search, .header-container .login {
+    margin-top: 30px;
+  }
+}
+
+/* ===================
+    Feature Grid
+   =================== */
+/* line 141, ../sass/base.scss */
+.feature-grid {
+  width: 100%;
+  padding: 10px 0 40px 0;
+  position: relative;
+  height: auto;
+}
+/* line 147, ../sass/base.scss */
+.feature-grid .grid-item {
+  float: left;
+  width: 33%;
+  margin-right: .5%;
+  margin-bottom: .5%;
+  -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.25);
+  height: auto;
+  overflow: hidden;
+  -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out, left 0.5s ease-in-out, z-index 1s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out, height 0.5s ease-in-out, left 0.5s ease-in-out, z-index 1s ease-in-out;
+  -o-transition: width 0.5s ease-in-out, height 0.5s ease-in-out, left 0.5s ease-in-out, z-index 1s ease-in-out;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out, left 0.5s ease-in-out, z-index 1s ease-in-out;
+}
+@media screen and (max-width: 480px) {
+  /* line 147, ../sass/base.scss */
+  .feature-grid .grid-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* line 147, ../sass/base.scss */
+  .feature-grid .grid-item {
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+  /* line 168, ../sass/base.scss */
+  .feature-grid .grid-item:nth-child(2n) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  /* line 173, ../sass/base.scss */
+  .feature-grid .grid-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 180, ../sass/base.scss */
+  .feature-grid .grid-item:nth-child(3n) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  /* line 185, ../sass/base.scss */
+  .feature-grid .grid-item:nth-child(n+3), .feature-grid .grid-item:nth-child(n+4) {
+    margin-bottom: 0;
+  }
+  /* line 189, ../sass/base.scss */
+  .feature-grid .grid-item:nth-child(4n) {
+    clear: both;
+  }
+}
+/* line 202, ../sass/base.scss */
+.feature-grid .grid-item img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+/* line 211, ../sass/base.scss */
+.feature-grid .grid-item.feature-promo {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+}
+/* line 217, ../sass/base.scss */
+.feature-grid .grid-item.feature-promo img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 223, ../sass/base.scss */
+.feature-grid .grid-item.sub-promo {
+  position: relative;
+  background: #fff;
+}
+/* line 227, ../sass/base.scss */
+.feature-grid .grid-item.sub-promo .content {
+  padding: 0;
+}
+/* line 230, ../sass/base.scss */
+.feature-grid .grid-item.sub-promo .content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===================
+    Overlay 
+   =================== */
+/* line 243, ../sass/base.scss */
+.main-container {
+  position: relative;
+}
+
+/* line 247, ../sass/base.scss */
+.overlay {
+  background: #000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: none;
+}
+
+/* line 259, ../sass/base.scss */
+.full-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: none;
+}
+
+/* line 269, ../sass/base.scss */
+#slide-products {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-position: center center;
+  background-image: url("../img/product_bg.jpg");
+  background-size: cover;
+}
+/* line 279, ../sass/base.scss */
+#slide-products .side-content {
+  float: left;
+  margin: 1% 0 0 2%;
+  width: 32%;
+}
+/* line 284, ../sass/base.scss */
+#slide-products .side-content img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 290, ../sass/base.scss */
+#slide-products .content {
+  width: 58%;
+  float: left;
+  margin: 15% 0 0 4%;
+}
+/* line 295, ../sass/base.scss */
+#slide-products .content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 302, ../sass/base.scss */
+#slide-loans {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  left: 0;
+  top: 0;
+  background-position: left top;
+  background-image: url("../img/loan_bg.jpg");
+  background-color: #46b93a;
+  -webkit-transition: height 0.5s ease-in-out;
+  -moz-transition: height 0.5s ease-in-out;
+  -o-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+}
+
+/* line 315, ../sass/base.scss */
+span.full-view-exit {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background: url("../img/btn_close.png") no-repeat left top;
+  width: 43px;
+  height: 26px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+/* line 328, ../sass/base.scss */
+.in .full-view-exit {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* ===================
+    Slider
+   =================== */
+/* line 337, ../sass/base.scss */
+.fluidHeight {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+}
+
+/* 
+ * below 900px, switch to percentage based responsive height.
+ * padding of 33.333% is calculated by using the 
+ * image ratio 300px/900px = .333 * 100% = 33.333% 
+ */
+@media screen and (max-width: 900px) {
+  /* line 350, ../sass/base.scss */
+  .fluidHeight {
+    height: 0;
+    padding: 0 0 33.333% 0;
+  }
+}
+/* line 357, ../sass/base.scss */
+.sliderContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 363, ../sass/base.scss */
+.iosSlider {
+  width: 100%;
+  height: 100%;
+  background: #aaa;
+}
+
+/* line 369, ../sass/base.scss */
+.iosSlider .slider {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 374, ../sass/base.scss */
+.iosSlider .slider .item {
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 900px;
+  width: auto;
+  height: auto;
+}
+
+/* line 384, ../sass/base.scss */
+.iosSlider .slider .item img {
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ===================
+    Touch Scroll
+   =================== */
+/* line 396, ../sass/base.scss */
+#TouchScroller {
+  width: 100%;
+  height: auto;
+}
+
+/* line 402, ../sass/base.scss */
+#TouchScroller div.scrollableArea .item {
+  position: relative;
+  display: block;
+  float: left;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+/* line 409, ../sass/base.scss */
+#TouchScroller div.scrollableArea .item .hide {
+  display: none;
+}
+/* line 413, ../sass/base.scss */
+#TouchScroller div.scrollableArea .item.quick-links {
+  margin-top: 33px;
+}
+/* line 415, ../sass/base.scss */
+#TouchScroller div.scrollableArea .item.quick-links img {
+  float: left;
+  clear: both;
+}
+/* line 419, ../sass/base.scss */
+#TouchScroller div.scrollableArea .item.quick-links img:last-child {
+  margin-top: 10px;
+}
+/* line 425, ../sass/base.scss */
+#TouchScroller div.scrollableArea .item.loan-center {
+  padding-top: 6%;
+  padding-bottom: 20px;
+  width: 536px;
+  padding-right: 0;
+}
+/* line 432, ../sass/base.scss */
+#TouchScroller div.scrollableArea .item.loan-center img:first-child {
+  margin-bottom: 15px;
+}
+/* line 436, ../sass/base.scss */
+#TouchScroller div.scrollableArea .item.loan-center .loan-options {
+  display: block;
+  position: relative;
+}
+/* line 440, ../sass/base.scss */
+#TouchScroller div.scrollableArea .item.loan-center .loan-options img {
+  display: block;
+}
+/* line 444, ../sass/base.scss */
+#TouchScroller div.scrollableArea .item.loan-center .loan-options a {
+  display: block;
+  float: left;
+  clear: both;
+}
+/* line 450, ../sass/base.scss */
+#TouchScroller div.scrollableArea .item.loan-center .loan-options a.expanded {
+  display: none;
+}
+/* line 456, ../sass/base.scss */
+#TouchScroller div.scrollableArea .item.first-home {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  width: 455px;
+}
+/* line 463, ../sass/base.scss */
+#TouchScroller div.scrollableArea .item.first-home a {
+  background: #fff;
+  display: none;
+  float: left;
+}
+/* line 470, ../sass/base.scss */
+#TouchScroller div.scrollableArea .item.fixed-rate {
+  margin-top: 100px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  width: 542px;
+  margin-right: 20px;
+}
+/* line 479, ../sass/base.scss */
+#TouchScroller div.scrollableArea .item.fixed-rate img {
+  padding-left: 20px;
+  padding-right: 10px;
+  display: none;
+  background: #fff;
+  float: left;
+}
+
+/* line 490, ../sass/base.scss */
+div.scrollWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+/* line 498, ../sass/base.scss */
+div.scrollableArea {
+  position: relative;
+  width: auto;
+  height: 100%;
+}
+
+/* ===================
+    Footer Container
+   =================== */
+/* line 512, ../sass/base.scss */
+.footer-container footer .footer-main {
+  width: 100%;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  background: #f6f6f6 url("../img/footer_bg.png") no-repeat center center;
+  margin: 0 0 50px 0;
+}
+/* line 518, ../sass/base.scss */
+.footer-container footer .footer-main .footer-main-nav {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 38px;
+}
+/* line 522, ../sass/base.scss */
+.footer-container footer .footer-main .footer-main-nav nav {
+  padding: 50px 0 0 44px;
+}
+/* line 525, ../sass/base.scss */
+.footer-container footer .footer-main .footer-main-nav nav img {
+  max-width: 100%;
+}
+/* line 532, ../sass/base.scss */
+.footer-container footer .footer-main .footer-main-sub {
+  padding-bottom: 40px;
+}
+/* line 535, ../sass/base.scss */
+.footer-container footer .footer-main .footer-main-sub #footer-logo {
+  margin: 35px 0 0 36px;
+  display: block;
+  float: left;
+}
+/* line 540, ../sass/base.scss */
+.footer-container footer .footer-main .footer-main-sub .social {
+  float: right;
+  margin: 45px 70px 0 0;
+}
+/* line 547, ../sass/base.scss */
+.footer-container footer .footer-copyright {
+  margin: 0 0 40px 0;
+}
+/* line 549, ../sass/base.scss */
+.footer-container footer .footer-copyright img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 553, ../sass/base.scss */
+.footer-container footer .footer-copyright .copy-left {
+  float: left;
+  margin: 0 0 0 36px;
+  max-width: 60%;
+}
+/* line 558, ../sass/base.scss */
+.footer-container footer .footer-copyright .copy-right {
+  float: right;
+  margin: 0 70px 0 0;
+  max-width: 40%;
+}
+
+/*
+.card {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	-webkit-transition: -webkit-transform 1s;
+	   -moz-transition: -moz-transform 1s;
+	    -ms-transition: -moz-transform 1s;
+	     -o-transition: -moz-transform 1s;
+	        transition: -moz-transform 1s;
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+	    -ms-transform-style: preserve-3d;
+	     -o-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+
+}
+
+.card img {
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+	    -ms-backface-visibility: hidden;
+	     -o-backface-visibility: hidden;
+	        backface-visibility: hidden;
+}
+
+.card .front, .card .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+	    -ms-backface-visibility: hidden;
+	     -o-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	-webkit-transform: translate3d(0,0,0);
+	   -moz-transform: translate3d(0,0,0);
+	    -ms-transform: translate3d(0,0,0);
+	     -o-transform: translate3d(0,0,0);
+	        transform: translate3d(0,0,0);
+}
+
+.card .back {
+	-webkit-transform: rotateY(-180deg);
+	   -moz-transform: rotateY(-180deg);
+	    -ms-transform: rotateY(-180deg);
+	     -o-transform: rotateY(-180deg);
+	        transform: rotateY(-180deg);
+	        z-index: 9;
+}
+
+.card.flipped {
+	-webkit-transform: rotateY(-180deg);
+	   -moz-transform: rotateY(-180deg);
+	    -ms-transform: rotateY(-180deg);
+	     -o-transform: rotateY(-180deg);
+	        transform: rotateY(-180deg);
+}*/
+/* line 627, ../sass/base.scss */
+.full-view {
+  perspective: 1000;
+  -webkit-perspective: 1000;
+}
+
+/* line 631, ../sass/base.scss */
+.card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -ms-transition: -moz-transform 1s;
+  -o-transition: -moz-transform 1s;
+  transition: -moz-transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 648, ../sass/base.scss */
+.full-view .card.flipped {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+/* line 655, ../sass/base.scss */
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 670, ../sass/base.scss */
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  z-index: 9;
+}

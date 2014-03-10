@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>First Tech Redesign | Challenger Prototype</title>
+        <meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <link rel="stylesheet" href="css/base.css">
+    </head>
+    <body>
+
+        <div class="header-container">
+            <header class="wrapper cf">
+                <a href="index.html" id="logo"></a>
+				<div class="login"></div>
+				<div class="search"></div>
+				<nav id="root"></nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+
+        	<div class="overlay"></div>
+
+
+        	<div class="full-view-elements">
+        		<div class="full-view">
+        			<div class="card">
+        				<div class="front face">
+        					<div id="slide-products" class="slide">
+        						<div class="side-content">
+        							<img src="img/products_sidebar.png" />
+        						</div>
+        						<div class="content">
+        							<a class="flip" href="#"><img src="img/product_content.png" /></a>
+        						</div>
+        						<span class="full-view-exit"></span>
+        					</div>
+        				</div>
+        				<div class="back face">
+
+        					<div id="slide-loans">
+
+								<div id = 'TouchScroller'>
+									
+											
+									<div class = 'item quick-links'>
+										<img src = 'img/loan_slide1.png' />
+										<img class="hide" src="img/promo_todays_rates.png" />
+									</div>
+									
+									<div class = 'item loan-center'>
+										<img src = 'img/loan_text.png' />
+										
+										<div class="loan-options">
+											<a class="default"href="#">
+												<img src = 'img/loan_links_default.png' />
+											</a>
+											<a class="expanded" href="#"><img src="img/loan_links_expanded.png" /></a>
+										</div>
+									</div>
+									
+									<div class = 'item first-home'>
+										<a href="#" class="loan-rates"><img src = 'img/loan_slide3.png' /></a>
+									</div>
+									
+									<div class = 'item fixed-rate'>
+										<img class="loan-benefits" src = 'img/loan_slide4.png' />
+									</div>
+											
+
+								</div> 
+
+								<span class="full-view-exit"></span>
+
+							</div>
+						</div>       
+					</div>			
+
+        		</div>
+        	</div>
+
+
+
+            <div class="main wrapper">
+
+            	<div class="feature-grid cf">
+            		<div class="container">
+	            		<div class="grid-item feature-promo">
+	            			<img src="img/promo_membership.png" />
+	            		</div>            		
+	            		<div class="grid-item feature-promo" data-bgimage="img/product_bg.jpg">
+	            			<img src="img/products_thumb.jpg" />
+	            		</div>            		
+	            		<div class="grid-item feature-promo last-in-row">
+	            			<img src="img/promo_education.png" />
+	            		</div>    
+	            		<div class="grid-item sub-promo">
+	            				<img src="img/promo_fraud.jpg" />
+	            		</div>
+	            		<div class="grid-item sub-promo">
+	            				<img src="img/promo_fraud.jpg" />
+	            		</div>
+	            		<div class="grid-item sub-promo last-in-row">
+	            				<img src="img/promo_fraud.jpg" />
+	            		</div>
+	            	</div>
+	            </div>
+	            		
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+	        <footer class="contentinfo">
+	        	<div class="footer-main">
+	        		<div class="footer-main-nav">
+	        			<div class="wrapper cf">
+			        		<nav>
+			        			<img src="img/footer_menu.png" />
+			        		</nav>
+			        	</div>
+		        	</div>
+		        	<div class="footer-main-sub">
+		        		<div class="wrapper cf">
+			        		<a href="index.html" id="footer-logo"><img src="img/footer_logo.png" /></a>
+			        		<div class="social"><img src="img/footer_social.png" /></div>
+			        	</div>
+		        	</div>
+	        	</div>
+	        	<div class="footer-copyright">
+	        		<div class="wrapper cf">
+	        			<div class="copy-left">
+	        				<img src="img/copyright_content.png" />
+	        			</div>
+	        			<div class="copy-right">
+	        				<img src="img/copyright_secondary.png" />
+	        			</div>
+	        		</div>
+	        	</div>
+	        </footer>
+        </div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
+		<script src="js/plugins/jquery.kinetic.js"></script>
+		<script src="js/plugins/jquery.smoothTouchScroll.min.js"></script>
+		<script src="js/plugins/enquire.min.js"></script>
+        <script src="js/all.js"></script>
+    </body>
+</html>
