@@ -61,8 +61,8 @@ $(window).load(function(){
 						showLoans();
 						return false;
 					});
-					$('.loan-options a.default').on('click', function(e){
-						showBuyOptions();					
+					$('.loan-landing a.nav').on('click', function(e){
+						showSubContent();					
 						return false;
 					});					
 					$('.loan-options a.expanded').on('click', function(e){
@@ -120,13 +120,15 @@ $(window).load(function(){
 					//console.log('unflip');
 					$('.card').removeClass('flipped');
 				},
-				showBuyOptions = function(){
-					$('.loan-options a.default').slideFadeToggle(200);
-					$('.loan-options a.expanded').slideToggle(400);		
+				showSubContent = function(){
+					//$('.loan-landing a.nav').slideUp();	
 
-					setTimeout(function() {
-						$("img.hide").fadeIn();
-					}, 500 );	
+					TweenMax.allTo([$('.loan-landing h2'), $('p.description')], 0.5, {opacity: '0', ease: Power2.easeOut, delay: 0.1});
+					TweenMax.allTo([$('.loan-landing a.nav')], 0.5, {opacity: '0', ease: Power2.easeOut, delay: 0});
+					
+					$('.quick-links, .loan-center, .nav-fixed').fadeIn(600);
+					
+					TweenMax.allTo([$('.quick-links'), $('.loan-center')], 0.5, {marginTop: '-100px', ease: Power2.easeOut, delay: 0.1});
 
 				},
 				showRateOptions = function(){

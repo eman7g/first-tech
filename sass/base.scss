@@ -197,9 +197,19 @@ textarea {
     Feature Grid
    =================== */
 
+.secondary-container{
+	background: #f6f6f6 url('../img/footer_bg.png') no-repeat center center;
+	@include box-shadow(0 -6px 6px -6px rgba(0,0,0,.25));
+	
+	.feature-grid{
+		padding:20px 0 40px 0;
+	}
+
+}
+
 .feature-grid{
 	width:100%;
-	padding:10px 0 40px 0;
+	padding:10px 0 10px 0;
 	position:relative;
 	height:auto;
 
@@ -282,6 +292,7 @@ textarea {
 		&.sub-promo{
 			position:relative;
 			background:#fff;
+			min-height: 254px;
 
 			.content{
 				padding:0;
@@ -332,7 +343,7 @@ textarea {
 	left:0;
 	top:0;
 	background-position: center center;
-	background-image: url('../img/product_bg.jpg');
+	background-image: url('../img/slide_products_bg.jpg');
 	background-size:cover;
 
 	.side-content{
@@ -344,17 +355,35 @@ textarea {
 			max-width:100%;
 			height:auto;
 		}
+
 	}
 
 	.content{
-		width:58%;
+		width:90%;
 		float:left;
-		margin:15% 0 0 4%;
+		margin:15% 5% 0 5%;
 
-		img{
-			max-width:100%;
+		h1{
+			font-size:54px;
+			line-height: 62px;
+			color:#fff;
+			text-transform:uppercase;
+			font-family: 'interstatebold';
+			text-align:center;
+			margin-bottom:8%;
+		}
+
+		a img{
+			width:100%;
 			height:auto;
 		}
+
+		span.quick-links{
+			position:absolute;
+			right:8%;
+			top:29%;
+		}
+
 	}
 }
 
@@ -366,15 +395,16 @@ textarea {
 	left:0;
 	top:0;
 	background-position: left top;
-	background-image: url('../img/loan_bg.jpg');
-	background-color:#46b93a;
+	background-image: url('../img/slide_loan_bg.jpg');
+	background-color:#33772a;
+	background-repeat: no-repeat;
 	@include transition(height .5s ease-in-out);
 }
 
 span.full-view-exit{
 	position:absolute;
 	right:20px;
-	top:10px;
+	top:20px;
 	background: url('../img/btn_close.png') no-repeat left top;
 	width:43px;
 	height:26px;
@@ -438,6 +468,8 @@ span.full-view-exit{
 	max-width: 900px;
 	width: auto;
 	height: auto;
+
+
 }
 
 .iosSlider .slider .item img {
@@ -463,34 +495,75 @@ span.full-view-exit{
 	display: block;
 	float: left;
 	padding: 0 10px;
-	margin: 10px 0;
+	margin: 10px 0 50px 0;
 
 	.hide{
 		display:none;
 	}
 
+	&.loan-landing{
+		width:920px;
+		padding:0 0 0 30px;
+
+		p{
+			font-size:13px;
+			line-height: 23px;
+			color:#fff;
+			font-family: 'interstatelight';
+			width:240px;
+			margin-top:40px;
+		}
+
+		h2{
+			font-size:16px;
+			line-height: 24px;
+			color:#fff;
+			text-transform:uppercase;
+			font-family: 'interstatelight';
+			text-align:center;
+			margin:15px 0;
+		}
+
+		h1{
+			font-size:54px;
+			line-height: 62px;
+			color:#fff;
+			text-transform:uppercase;
+			font-family: 'interstatebold';
+			text-align:center;
+			margin-bottom:50px;
+		}
+
+		.nav-fixed{
+			position:fixed;
+			top:20px;
+			left:20px;
+			display:none;
+		}
+
+	}
+
 	&.quick-links {
-		margin-top:33px;
+		clear:both;
+		padding:0;
+		margin:0 20px 0 0;
+		display:none;
+
 		img{
 			float:left;
 			clear:both;
 
-			&:last-child{
-				margin-top:10px;
-			}
+
 		}
 	}
 
 	&.loan-center{
-		padding-top:6%;
-		padding-bottom:20px;
+		padding:0;
 		width:536px;
 		padding-right:0;
+		margin:0 0 0 20px;
+		display:none;
 
-
-		img:first-child{
-			margin-bottom:15px;
-		}
 
 		.loan-options{
 			display:block;
@@ -507,15 +580,15 @@ span.full-view-exit{
 			}
 
 			a.expanded{
-				display:none;
+				display:block;
 			}
 		}
 	}
 
 	&.first-home{
-		margin-top:100px;
+		margin-top:150px;
 		padding-bottom:20px;
-		margin-bottom:20px;
+		margin-bottom:0;
 		width:455px;
 
 
@@ -527,11 +600,11 @@ span.full-view-exit{
 	}
 
 	&.fixed-rate{
-		margin-top:100px;
+		margin-top:150px;
 		padding-left:0;
 		padding-right:0;
 		padding-bottom:20px;
-		margin-bottom:20px;
+		margin-bottom:0;
 		width:542px;
 		margin-right:20px;
 
@@ -566,7 +639,7 @@ div.scrollableArea
    =================== */
 .footer-container{
 
-	.footer-container{
+	.footer-inner{
 		padding:0 50px;
 	}
 
@@ -576,12 +649,12 @@ div.scrollableArea
 			width:100%;
 			@include box-shadow(0 0 6px rgba(0,0,0,.25));
 			background: #f6f6f6 url('../img/footer_bg.png') no-repeat center center;
-			margin:0 0 50px 0;
+			margin:0 0 100px 0;
 
 
 			@media screen and (min-width:320px) and (max-width: 640px) {
 
-				.footer-container{
+				.footer-inner{
 					padding:0 20px;
 				}
 			}
@@ -708,7 +781,7 @@ div.scrollableArea
 		}	
 
 		.footer-copyright{
-			margin:0 0 40px 0;
+			padding:40px 0 60px 0;
 
 			@media screen and (min-width:320px) and (max-width: 640px) {
 
