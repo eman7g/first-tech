@@ -117,6 +117,8 @@ $(window).load(function(){
 					TweenMax.allTo([$('.loan-landing h2'), $('p.description')], 0.5, {opacity: '1', ease: Power2.easeOut, delay: 0.1});
 					TweenMax.allTo([$('.loan-landing .nav')], 0.5, {opacity: '1', ease: Power2.easeOut, delay: 0});
 					
+					TweenLite.to(".loan-landing h1", 1, {fontSize:"56px", top:"240px", left:"215px", ease:Power2.easeInOut});
+
 					$('.quick-links, .loan-center, .nav-fixed').fadeOut(600);
 					
 					TweenMax.allTo([$('.quick-links'), $('.loan-center')], 0.5, {marginTop: '0', ease: Power2.easeOut, delay: 0.1});
@@ -189,12 +191,12 @@ $(window).load(function(){
 					TweenMax.allTo([$('.loan-landing h2'), $('p.description')], 0.5, {opacity: '1', ease: Power2.easeOut, delay: 0.8});
 					TweenMax.allTo([$('.loan-landing .nav')], 0.5, {opacity: '1', ease: Power2.easeOut, delay: 0.8});
 					
-					$('.loan-center, .nav-fixed').fadeOut(600);
+					$('.loan-landing .quick-links, .loan-center, .nav-fixed').fadeOut(600);
 
 					TweenLite.to(".loan-landing h1", 1, {fontSize:"56px", top:"240px", left:"215px", ease:Power2.easeInOut});
 
 					
-					TweenMax.allTo([$('.loan-center')], 0.5, {marginTop: '0', ease: Power2.easeOut, delay: 0.1});
+					TweenMax.allTo([$('.loan-landing .quick-links'), $('.loan-center')], 0.5, {marginTop: '0', ease: Power2.easeOut, delay: 0.1});
 
 					$('.scrollWrapper').stop().animate({
 						scrollLeft: 0
