@@ -7,7 +7,7 @@
 @import "compass/css3";
 @import "partials/settings";
 @import "partials/library";
-@import "susy";
+//@import "susy";
 
 $break-small: 480px;
 $break-medium: 768px;
@@ -489,6 +489,18 @@ span.full-view-exit{
 	height:auto;
 }
 
+.nav-fixed{
+	position:absolute;
+	top:20px;
+	left:20px;
+	display:none;
+
+	img{
+		width:90%;
+	}
+}
+
+
 #TouchScroller div.scrollableArea .item
 {
 	position: relative;
@@ -521,7 +533,7 @@ span.full-view-exit{
 			text-transform:uppercase;
 			font-family: 'interstatelight';
 			text-align:center;
-			margin:15px 0;
+			margin:30px 0 15px 0;
 		}
 
 		h1{
@@ -531,15 +543,18 @@ span.full-view-exit{
 			text-transform:uppercase;
 			font-family: 'interstatebold';
 			text-align:center;
-			margin-bottom:50px;
+			position:absolute;
+			top:240px;
+			left:215px;
 		}
 
-		.nav-fixed{
-			position:fixed;
-			top:20px;
-			left:20px;
-			display:none;
+		.nav{
+			margin-top:166px;
 		}
+		.nav img{
+			max-width:100%;
+		}
+
 
 	}
 
@@ -573,26 +588,26 @@ span.full-view-exit{
 				display:block;
 			}
 
-			a{
+			div{
 				display:block;
 				float:left;
 				clear:both;
 			}
 
-			a.expanded{
+			.expanded{
 				display:block;
 			}
 		}
 	}
 
 	&.first-home{
-		margin-top:150px;
-		padding-bottom:20px;
+		margin-top:130px;
+		padding:0 0 20px 0;
 		margin-bottom:0;
-		width:455px;
+		width:475px;
 
 
-		a{
+		.loan-rates{
 			background:#fff;
 			display:none;
 			float:left;
@@ -600,7 +615,7 @@ span.full-view-exit{
 	}
 
 	&.fixed-rate{
-		margin-top:150px;
+		margin-top:130px;
 		padding-left:0;
 		padding-right:0;
 		padding-bottom:20px;

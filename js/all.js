@@ -61,18 +61,23 @@ $(window).load(function(){
 						showLoans();
 						return false;
 					});
-					$('.loan-landing a.nav').on('click', function(e){
+					$('.loan-landing .nav').on('click', function(e){
 						showSubContent();					
 						return false;
 					});					
-					$('.loan-options a.expanded').on('click', function(e){
+					$('.loan-options .expanded').on('click', function(e){
 						showRateOptions();					
 						return false;
 					});
 					$('.loan-rates').on('click', function(e){
 						showRateBenefits();
 						return false;
-					});
+					});					
+					$('.nav-fixed').on('click', function(e){
+						resetLoans();
+						return false;
+					});					
+					
 
 
 
@@ -105,6 +110,17 @@ $(window).load(function(){
 					//console.log('hidefullview');
 					$fullview.fadeOut().removeClass('in');
 					$('.card').removeClass('flipped');
+
+					$('.loan-benefits').fadeOut(300);
+					$('.loan-rates').fadeOut(300);
+
+					TweenMax.allTo([$('.loan-landing h2'), $('p.description')], 0.5, {opacity: '1', ease: Power2.easeOut, delay: 0.1});
+					TweenMax.allTo([$('.loan-landing .nav')], 0.5, {opacity: '1', ease: Power2.easeOut, delay: 0});
+					
+					$('.quick-links, .loan-center, .nav-fixed').fadeOut(600);
+					
+					TweenMax.allTo([$('.quick-links'), $('.loan-center')], 0.5, {marginTop: '0', ease: Power2.easeOut, delay: 0.1});
+
 				},
 				//enable card flip
 				showLoans = function(){
@@ -124,18 +140,24 @@ $(window).load(function(){
 					//$('.loan-landing a.nav').slideUp();	
 
 					TweenMax.allTo([$('.loan-landing h2'), $('p.description')], 0.5, {opacity: '0', ease: Power2.easeOut, delay: 0.1});
-					TweenMax.allTo([$('.loan-landing a.nav')], 0.5, {opacity: '0', ease: Power2.easeOut, delay: 0});
+					TweenMax.allTo([$('.loan-landing .nav')], 0.5, {opacity: '0', ease: Power2.easeOut, delay: 0});
 					
 					$('.quick-links, .loan-center, .nav-fixed').fadeIn(600);
 					
 					TweenMax.allTo([$('.quick-links'), $('.loan-center')], 0.5, {marginTop: '-100px', ease: Power2.easeOut, delay: 0.1});
 
+
 				},
 				showRateOptions = function(){
 					//$('.loan-options a.default').slideFadeToggle(200);
 					//$('.loan-options a.expanded').slideFadeToggle(300);		
-					$('.loan-rates').slideFadeToggle(300);
+					$('.loan-benefits').fadeOut(300);
+					$('.loan-rates').fadeOut(300);
+					$('.loan-rates').fadeIn(300);
 					var $scrollheight = $('#slide-loans').height();
+
+
+					TweenLite.to(".loan-landing h1", 1, {fontSize:"40px", top:"126px", left:"407px", ease:Power2.easeInOut});
 
 					//$("#slide-loans").height($scrollheight);
 
@@ -148,7 +170,9 @@ $(window).load(function(){
 						}, 1000);
 				},		
 				showRateBenefits = function(){
-					$('.loan-benefits').fadeIn(400);
+					$('.loan-benefits').fadeOut(300);
+					$('.loan-benefits').fadeIn(300);
+
 					var $screenWidth = $('body').width();
 					var $scrollAreaWidth = $('.scrollableArea').width();
 					var $loanRatesOffset = $scrollAreaWidth - $screenWidth - 20;
@@ -156,6 +180,24 @@ $(window).load(function(){
 					
 					$('.scrollWrapper').stop().animate({
 						scrollLeft: $loanRatesOffset
+						}, 1000);
+				},
+				resetLoans = function(){
+					$('.loan-benefits').fadeOut(300);
+					$('.loan-rates').fadeOut(300);
+
+					TweenMax.allTo([$('.loan-landing h2'), $('p.description')], 0.5, {opacity: '1', ease: Power2.easeOut, delay: 0.8});
+					TweenMax.allTo([$('.loan-landing .nav')], 0.5, {opacity: '1', ease: Power2.easeOut, delay: 0.8});
+					
+					$('.loan-center, .nav-fixed').fadeOut(600);
+
+					TweenLite.to(".loan-landing h1", 1, {fontSize:"56px", top:"240px", left:"215px", ease:Power2.easeInOut});
+
+					
+					TweenMax.allTo([$('.loan-center')], 0.5, {marginTop: '0', ease: Power2.easeOut, delay: 0.1});
+
+					$('.scrollWrapper').stop().animate({
+						scrollLeft: 0
 						}, 1000);
 				};
 
